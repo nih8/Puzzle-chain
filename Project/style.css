@@ -1,0 +1,49 @@
+
+body{
+   background-color: rgb(243, 238, 211);
+   color: rgb(137, 104, 41);
+   text-align: center;
+   margin: 0px;
+   padding: 0px;
+   
+
+}
+#heading{
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#heading2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#l1,#l3,#l5{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#l2{
+    
+    
+    font-family:'Lucida Calligraphy';    
+    font-size: 100px;
+    
+}
+a{
+    font-size: 40px;
+    font-family: 'Algerian';
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(137, 104, 41);
+}
+a:hover{
+    color: blueviolet;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#l6{
+    font-size: 50px;
+    font-family: 'Century Gothic';
+}
+
+
