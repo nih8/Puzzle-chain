@@ -3,448 +3,16 @@
 #include<string.h>
 #include<stdlib.h>
 #include "levels.h"
-int wrong =0;
-/*int easy1();
-int hard1();
-int medium1();
+int wrong =0; //global variable for counting the number of wrong attempts
 
-
-int level1(int k){
-    if(k==1) return easy1();
-    else if(k==2) return medium1();
-    else if(k==3) return hard1();
-}
-int easy1(){
-    
-    char *q= "A ___ a day, keeps the doc away";
-    char a[100];
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-    q= "if A->1, B->2 then E-> ??";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-     q= "4 X 9 =?";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
-    if(check==0) return 1;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-
-   
-}
-
-
-int medium1(){
-    char *q = "As you sow, so shall you ___";
-    char *a ;
-    printf("%s\n",q);
-    scanf(" %s",a);
-    int check = strcasecmp(a,"reap");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-    q = "if B-> E and E-> H, then J->??";
-    printf("%s\n",q);
-    scanf(" %s",a);
-    check = strcasecmp(a,"M");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3){
-       printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4; 
-    }
-    q = "12 X 7 = ??";
-    printf("%s\n",q);
-    scanf(" %s",a);
-    check = strcasecmp(a,"84");
-    if(check==0) return 1;
-    wrong++;
-    if(wrong>=3){
-       printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4; 
-    }
-
-
-}
-int hard1(){
-    char *q = "Beauty lies in the eyes of the ___";
-    char *a ;
-    printf("%s\n",q);
-    scanf(" %s",a);
-    int check = strcasecmp(a,"beholder");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-    q = "if A->1, B->3, C->5 then F->??";
-    printf("%s\n",q);
-    scanf(" %s",a);
-    check = strcasecmp(a,"11");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3){
-       printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4; 
-    }
-    q = "25 X 7= ??";
-    printf("%s\n",q);
-    scanf(" %s",a);
-    check = strcasecmp(a,"175");
-    if(check==0) return 1;
-    wrong++;
-    if(wrong>=3){
-       printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4; 
-    }
-
-}
-int easy2();
-int medium2();
-int hard2();
-int level2(int k){
-    if(k==1) return easy2();
-    else if(k==2) return medium2();
-    else if(k==3) return hard2();   
-}
-
-int easy2(){
-    char *q= "A ___ a day, keeps the doc away";
-    char a[100];
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-    q= "if A->1, B->2 then E-> ??";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-     q= "4 X 9 =?";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
-    if(check==0) return 1;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-   
-}
-int medium2(){
-    char *q= "A ___ a day, keeps the doc away";
-    char a[100];
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-    q= "if A->1, B->2 then E-> ??";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-     q= "4 X 9 =?";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
-    if(check==0) return 1;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-   
-}
-int hard2(){
-    char *q= "A ___ a day, keeps the doc away";
-    char a[100];
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-    q= "if A->1, B->2 then E-> ??";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-     q= "4 X 9 =?";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
-    if(check==0) return 1;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-   
-}
-int easy3();
-int medium3();
-int hard3();
-int level3(int k){
-    if(k==1) return easy3();
-    else if(k==2) return medium3();
-    else if(k==3) return hard3();   
-}
-int easy3(){
-    char *q= "A ___ a day, keeps the doc away";
-    char a[100];
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-    q= "if A->1, B->2 then E-> ??";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-     q= "4 X 9 =?";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
-    if(check==0) return 1;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-   
-}
-int medium3(){
-    char *q= "A ___ a day, keeps the doc away";
-    char a[100];
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-    q= "if A->1, B->2 then E-> ??";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-     q= "4 X 9 =?";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
-    if(check==0) return 1;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-   
-}
-int hard3(){
-    char *q= "A ___ a day, keeps the doc away";
-    char a[100];
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-    q= "if A->1, B->2 then E-> ??";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-     q= "4 X 9 =?";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
-    if(check==0) return 1;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-   
-}
-int easy4();
-int medium4();
-int hard4();
-int level4(int k){
-    if(k==1) return easy3();
-    else if(k==2) return medium3();
-    else if(k==3) return hard3();   
-}
-int easy4(){
-    char *q= "A ___ a day, keeps the doc away";
-    char a[100];
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-    q= "if A->1, B->2 then E-> ??";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-     q= "4 X 9 =?";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
-    if(check==0) return 1;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-   
-}
-int medium4(){
-    char *q= "A ___ a day, keeps the doc away";
-    char a[100];
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-    q= "if A->1, B->2 then E-> ??";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-     q= "4 X 9 =?";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
-    if(check==0) return 1;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-   
-}
-int hard4(){
-    char *q= "A ___ a day, keeps the doc away";
-    char a[100];
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
-    if(check==0) return 3;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-    q= "if A->1, B->2 then E-> ??";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
-    if(check==0) return 2;
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    }
-     q= "4 X 9 =?";
-    
-    printf("%s\n",q);
-    scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
-    if(check==0) return 1;
-    
-    wrong++;
-    if(wrong>=3) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
-    } 
-   
-} */
-char * l(int k){
+char * l(int k){                       //function for returning the level
     if(k==1) return "EASY";
     else if(k==2) return "MEDIUM";
     else if(k==3) return "HARD";
 }
-void certificate(char *name,char * path){
-    printf("enterterd\n");
-    printf("%s\n","Enter a file-name for certificate:");
+void certificate(char *name,char * path){  //function for generating a HTML certificate with the name of player and path
+    
+    printf("Enter a file-name for certificate:\n");
     char filename[1000];
     scanf(" %s",filename);
     strcat(filename,".html");
@@ -457,7 +25,7 @@ void certificate(char *name,char * path){
     fprintf(ptr,"</div></body></html>");
         
     fclose(ptr);
-    printf("file closed\n");
+    printf("Certificate generated! :)\n");
     char command[100];
 
     #ifdef _WIN32
@@ -469,10 +37,10 @@ void certificate(char *name,char * path){
 }
 
 int main(){
-    printf("WELCOME, PLEASE ENTER YOUR NAME:\n");
+    printf("WELCOME :D, PLEASE ENTER YOUR NAME:\n"); // \U tag for emoji
     char name[1000];
     scanf("%[^\n]",name);
-    printf("%s\n",name);
+    printf("You will have three lives for the first 2 levels and 3 lives for the last two\n");
     printf("%s","Select difficulty level (enter the option number only):\n 1.Easy\n 2.Medium\n 3.Hard\n");
     int level;
     scanf("%d",&level);
@@ -481,63 +49,42 @@ int main(){
         printf("%s\n","Invalid input\n Enter Again:\n");
         scanf("%d",&level);
     }
+    printf("Entering Level 1.. ALL THE BEST :)\n");
     int a,b,c;
     int next = level1(level);
 
     if(next==4) return 0;
+    
+    printf("Entering Level 2.. LESGOO YOU CAN DO IT!!\n");
     a = next;
     
     next = level2(next);
     if(next==4) return 0;
+    wrong =0;
+    printf("Entering Level 3.. You are on fire\n");
     b = next;
     
     next = level3(next);
     if(next==4) return 0;
+    printf("Entering Level 4..\n THE FINAL LEVEL\n");
     c = next;
     
     next = level4(next);
     if(next==4) return 0;
 
-    printf("%s\n", "CONGRATULATIONS!!!\n YOU WON!!\n");
-    
+    printf("%s\n", "CONGRATULATIONS!!! YOU WON!!\n");
+    printf("Your path was:\n");
     printf("%s-> %s-> %s-> %s",l(level),l(a),l(b),l(c)); 
-    printf("%s\n","k");
+    
     char path[1000];
-    strcpy(path,l(level));
+    strcpy(path,l(level));   //the path used by the player
     strcat(path," -> ");
     strcat(path,l(a));
     strcat(path," -> ");
     strcat(path,l(b));
     strcat(path," -> ");
     strcat(path,l(c));
+    printf("Let's Generate a Certificate for you!\n");
     certificate(name,path);
-
-    /*printf("%s\n","Enter a file-name for certificate:");
-    char *filename;
-    scanf(" %s",filename);
-    strcat(filename,".html");
-    FILE *ptr;
-    ptr = fopen(filename,"w");
-    fputs("<html><body>hello<br>Your path was",ptr);
-    char *yo = "kn bas";
-    fputs(yo,ptr);
-
-    fputs("</body></html>",ptr);
-    fclose(ptr);
-    char command[100];
-
-    #ifdef _WIN32
-        sprintf(command, "start %s", filename);
-    
-    #endif
-
-    system(command); */
-    
-    
-    
-
-
-
-
 
 }

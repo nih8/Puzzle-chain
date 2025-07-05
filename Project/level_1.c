@@ -14,7 +14,7 @@ int level1(int k){
     else if(k==3) return hard1();
 }
 int easy1(){
-    
+    printf("Easy peasy level entereddddd\n");
     char *q= "A ___ a day, keeps the doc away";
     char a[100];
     printf("%s\n",q);
@@ -22,8 +22,12 @@ int easy1(){
     int check = strcasecmp(a,"apple");
     if(check==0) return 3;
     wrong++;
-    if(wrong>=5) {
-        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
+
+    if(wrong>=3) {
+        printf("YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
+    }
+    else{
+        printf("OOPS that was wrong\n");
     }
     q= "if A->1, B->2 then E-> ??";
     
@@ -32,8 +36,11 @@ int easy1(){
     check = strcasecmp(a,"5");
     if(check==0) return 2;
     wrong++;
-    if(wrong>=5) {
+    if(wrong>=3) {
         printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
+    }
+    else{
+        printf("Wrong again\n");
     }
      q= "4 X 9 =?";
     
@@ -42,9 +49,12 @@ int easy1(){
     check = strcasecmp(a,"36");
     if(check==0) return 1;
     wrong++;
-    if(wrong>=5) {
+    if(wrong>=3) {
         printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
     } 
+    else{
+        printf("Wrong \n");
+    }
 
    
 }
@@ -58,17 +68,23 @@ int medium1(){
     int check = strcasecmp(a,"reap");
     if(check==0) return 3;
     wrong++;
-    if(wrong>=5) {
+    if(wrong>=3) {
         printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
     } 
+    else{
+        printf("OOPS that was wrong\n");
+    }
     q = "if B-> E and E-> H, then J->??";
     printf("%s\n",q);
     scanf(" %s",a);
     check = strcasecmp(a,"M");
     if(check==0) return 2;
     wrong++;
-    if(wrong>=5){
+    if(wrong>=3){
        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4; 
+    }
+    else{
+        printf("Wrong again\n");
     }
     q = "12 X 7 = ??";
     printf("%s\n",q);
@@ -76,9 +92,13 @@ int medium1(){
     check = strcasecmp(a,"84");
     if(check==0) return 1;
     wrong++;
-    if(wrong>=5){
+    if(wrong>=3){
        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4; 
     }
+    else{
+        printf("Wrong \n");
+    }
+
 
 
 }
@@ -90,17 +110,23 @@ int hard1(){
     int check = strcasecmp(a,"beholder");
     if(check==0) return 3;
     wrong++;
-    if(wrong>=5) {
+    if(wrong>=3) {
         printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4;
     } 
+    else{
+        printf("OOPS that was wrong\n");
+    }
     q = "if A->1, B->3, C->5 then F->??";
     printf("%s\n",q);
     scanf(" %s",a);
     check = strcasecmp(a,"11");
     if(check==0) return 2;
     wrong++;
-    if(wrong>=5){
+    if(wrong>=3){
        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4; 
+    }
+    else{
+        printf("Wrong again\n");
     }
     q = "25 X 7= ??";
     printf("%s\n",q);
@@ -108,8 +134,12 @@ int hard1(){
     check = strcasecmp(a,"175");
     if(check==0) return 1;
     wrong++;
-    if(wrong>=5){
+    if(wrong>=3){
        printf("%s", "YOU LOST. BETTER LUCK NEXT TIME\n");return 4; 
     }
+    else{
+        printf("Wrong \n");
+    }
+
 
 }
