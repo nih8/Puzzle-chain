@@ -20,3 +20,7 @@
 - Personalized HTML+CSS certificate generation by building a HTML+CSS library
 - HTML to PDF conversion
 - Use of ML for adaptive difficulty
+
+## For running the project:
+- gcc main.c level_1.c level_2.c level_3.c level_4.c -o puzzle_chain 
+- ./puzzle_chain (on the next line)

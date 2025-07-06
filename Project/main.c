@@ -74,7 +74,7 @@ int main(){
 
     printf("%s\n", "CONGRATULATIONS!!! YOU WON!!\n");
     printf("Your path was:\n");
-    printf("%s-> %s-> %s-> %s",l(level),l(a),l(b),l(c)); 
+    printf("%s-> %s-> %s-> %s\n",l(level),l(a),l(b),l(c)); 
     
     char path[1000];
     strcpy(path,l(level));   //the path used by the player
