@@ -15,11 +15,12 @@ int level1(int k){
 }
 int easy1(){
     printf("Easy peasy level entereddddd\n");
-    char *q= "A ___ a day, keeps the doc away";
+    char *q= "Which letter comes after C?";
+    
     char a[100];
     printf("%s\n",q);
     scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
+    int check = strcasecmp(a,"d");
     if(check==0) return 3;
     wrong++;
 
@@ -29,11 +30,11 @@ int easy1(){
     else{
         printf("OOPS that was wrong\n");
     }
-    q= "if A->1, B->2 then E-> ??";
+    q= "What is 2 + 2?";
     
     printf("%s\n",q);
     scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
+    check = strcasecmp(a,"4");
     if(check==0) return 2;
     wrong++;
     if(wrong>=3) {
@@ -42,7 +43,7 @@ int easy1(){
     else{
         printf("Wrong again\n");
     }
-     q= "4 X 9 =?";
+     q= "Which vowel comes after A?";
     
     printf("%s\n",q);
     scanf(" %[^\n]",a);
@@ -61,11 +62,11 @@ int easy1(){
 
 
 int medium1(){
-    char *q = "As you sow, so shall you ___";
+    char *q = "Alphabet position of letter F?";
     char *a ;
     printf("%s\n",q);
     scanf(" %s",a);
-    int check = strcasecmp(a,"reap");
+    int check = strcasecmp(a,"6");
     if(check==0) return 3;
     wrong++;
     if(wrong>=3) {
@@ -74,10 +75,10 @@ int medium1(){
     else{
         printf("OOPS that was wrong\n");
     }
-    q = "if B-> E and E-> H, then J->??";
+    q = "What is the reverse of the word "DOG"?";
     printf("%s\n",q);
     scanf(" %s",a);
-    check = strcasecmp(a,"M");
+    check = strcasecmp(a,"god");
     if(check==0) return 2;
     wrong++;
     if(wrong>=3){
@@ -86,10 +87,10 @@ int medium1(){
     else{
         printf("Wrong again\n");
     }
-    q = "12 X 7 = ??";
+    q = "What is 10 divided by 2?";
     printf("%s\n",q);
     scanf(" %s",a);
-    check = strcasecmp(a,"84");
+    check = strcasecmp(a,"5");
     if(check==0) return 1;
     wrong++;
     if(wrong>=3){
@@ -103,11 +104,11 @@ int medium1(){
 
 }
 int hard1(){
-    char *q = "Beauty lies in the eyes of the ___";
+    char *q = "If A=1, B=2, ..., what is the sum of C + D?";
     char *a ;
     printf("%s\n",q);
     scanf(" %s",a);
-    int check = strcasecmp(a,"beholder");
+    int check = strcasecmp(a,"7");
     if(check==0) return 3;
     wrong++;
     if(wrong>=3) {
@@ -116,10 +117,10 @@ int hard1(){
     else{
         printf("OOPS that was wrong\n");
     }
-    q = "if A->1, B->3, C->5 then F->??";
+    q = "What is 3^3 (3 raised to the power 3)?";
     printf("%s\n",q);
     scanf(" %s",a);
-    check = strcasecmp(a,"11");
+    check = strcasecmp(a,"27");
     if(check==0) return 2;
     wrong++;
     if(wrong>=3){
@@ -128,10 +129,10 @@ int hard1(){
     else{
         printf("Wrong again\n");
     }
-    q = "25 X 7= ??";
+    q = "Which letter is 4th from the end of the alphabet?";
     printf("%s\n",q);
     scanf(" %s",a);
-    check = strcasecmp(a,"175");
+    check = strcasecmp(a,"w");
     if(check==0) return 1;
     wrong++;
     if(wrong>=3){
