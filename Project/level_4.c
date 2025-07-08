@@ -12,11 +12,11 @@ int level4(int k){
 }
 int easy4(){
      printf("Easy peasy level entereddddd\n");
-    char *q= "A ___ a day, keeps the doc away";
+    char *q= "Shift "X" forward by 2 letters.";
     char a[100];
     printf("%s\n",q);
     scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
+    int check = strcasecmp(a,"z");
     if(check==0) return 3;
     wrong++;
     if(wrong>=3) {
@@ -25,11 +25,11 @@ int easy4(){
     else{
         printf("OOPS that was wrong\n");
     }
-    q= "if A->1, B->2 then E-> ??";
+    q= "What is 100 divided by 10?";
     
     printf("%s\n",q);
     scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
+    check = strcasecmp(a,"10");
     if(check==0) return 2;
     wrong++;
     if(wrong>=3) {
@@ -38,11 +38,11 @@ int easy4(){
     else{
         printf("Wrong again\n");
     }
-     q= "4 X 9 =?";
+     q= "Binary 00000011 is what in decimal?";
     
     printf("%s\n",q);
     scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
+    check = strcasecmp(a,"3");
     if(check==0) return 1;
     wrong++;
     if(wrong>=3) {
@@ -55,11 +55,11 @@ int easy4(){
    
 }
 int medium4(){
-    char *q= "A ___ a day, keeps the doc away";
+    char *q= "What comes next in the pattern: A, D, G, J, __ ?";
     char a[100];
     printf("%s\n",q);
     scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
+    int check = strcasecmp(a,"m");
     if(check==0) return 3;
     wrong++;
     if(wrong>=3) {
@@ -68,11 +68,11 @@ int medium4(){
     else{
         printf("OOPS that was wrong\n");
     }
-    q= "if A->1, B->2 then E-> ??";
+    q= "What is the 15th letter of the English alphabet?";
     
     printf("%s\n",q);
     scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
+    check = strcasecmp(a,"o");
     if(check==0) return 2;
     wrong++;
     if(wrong>=3) {
@@ -81,11 +81,11 @@ int medium4(){
     else{
         printf("Wrong again\n");
     }
-     q= "4 X 9 =?";
+     q= "What is the sum of the first 5 natural numbers?";
     
     printf("%s\n",q);
     scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
+    check = strcasecmp(a,"15");
     if(check==0) return 1;
     wrong++;
     if(wrong>=3) {
@@ -98,11 +98,11 @@ int medium4(){
    
 }
 int hard4(){
-    char *q= "A ___ a day, keeps the doc away";
+    char *q= "ASCII value of 'A'?";
     char a[100];
     printf("%s\n",q);
     scanf(" %[^\n]",a);
-    int check = strcasecmp(a,"apple");
+    int check = strcasecmp(a,"65");
     if(check==0) return 3;
     wrong++;
     if(wrong>=3) {
@@ -111,11 +111,11 @@ int hard4(){
     else{
         printf("OOPS that was wrong\n");
     }
-    q= "if A->1, B->2 then E-> ??";
+    q= "What is (2² + 3² + 4²)?";
     
     printf("%s\n",q);
     scanf(" %[^\n]",a);
-    check = strcasecmp(a,"5");
+    check = strcasecmp(a,"29");
     if(check==0) return 2;
     wrong++;
     if(wrong>=3) {
@@ -124,11 +124,11 @@ int hard4(){
     else{
         printf("Wrong again\n");
     }
-     q= "4 X 9 =?";
+     q= "Which letter is 2 positions before 'Q'?";
     
     printf("%s\n",q);
     scanf(" %[^\n]",a);
-    check = strcasecmp(a,"36");
+    check = strcasecmp(a,"o");
     if(check==0) return 1;
     
     wrong++;
